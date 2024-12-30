@@ -5,3 +5,5 @@ Custom logging configuration for Spring Boot using Log4j2. Includes rolling file
 
 ![image](https://github.com/user-attachments/assets/163f6430-fc4b-4229-aaa2-fdafcd4a90db)
 
+Here the log.txt is the current date's log file and another file is earlier log file.
+
