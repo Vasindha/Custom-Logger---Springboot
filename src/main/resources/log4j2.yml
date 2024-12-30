@@ -1,0 +1,28 @@
+Configuration:
+  properties:
+    property:
+      - name: logPath
+        value: '${sys:user.dir}/Logs'
+
+  appenders:
+    RollingFile:
+      name: RollingFileAppender
+      fileName: '${logPath}/log.txt'    # Active log file with date
+      filePattern: '${logPath}/log-%d{yyyy-MM-dd}-%i.txt'
+      PatternLayout:
+        pattern: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+      Policies:
+        OnStartupTriggeringPolicy: {}                    # Rollover on service start
+        TimeBasedTriggeringPolicy:
+          interval: 1
+          modulate: true
+        SizeBasedTriggeringPolicy:
+          size: 10MB
+      DefaultRolloverStrategy:
+        max: 10
+
+  loggers:
+    Root:
+      level: info
+      AppenderRef:
+        - ref: RollingFileAppender
