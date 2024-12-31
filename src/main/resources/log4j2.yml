@@ -7,12 +7,12 @@ Configuration:
   appenders:
     RollingFile:
       name: RollingFileAppender
-      fileName: '${logPath}/log.txt'    # Active log file with date
+      fileName: '${logPath}/log.txt'
       filePattern: '${logPath}/log-%d{yyyy-MM-dd}-%i.txt'
       PatternLayout:
         pattern: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
       Policies:
-        OnStartupTriggeringPolicy: {}                    # Rollover on service start
+        OnStartupTriggeringPolicy: {}
         TimeBasedTriggeringPolicy:
           interval: 1
           modulate: true

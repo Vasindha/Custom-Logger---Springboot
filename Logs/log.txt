@@ -1,0 +1,9 @@
+2024-12-31 22:49:35 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-31 22:49:35 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-31 22:49:35 [http-nio-8080-exec-1] INFO  vipendrasinh.logger.controller.TestController - Inside test controller
+2024-12-31 22:49:39 [http-nio-8080-exec-2] INFO  vipendrasinh.logger.controller.TestController - Inside test controller
+2024-12-31 22:49:42 [http-nio-8080-exec-4] INFO  vipendrasinh.logger.controller.TestController - Inside test controller
+2024-12-31 22:49:42 [http-nio-8080-exec-7] INFO  vipendrasinh.logger.controller.TestController - Inside test controller
+2024-12-31 22:49:42 [http-nio-8080-exec-8] INFO  vipendrasinh.logger.controller.TestController - Inside test controller
+2024-12-31 22:50:06 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-31 22:50:06 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
